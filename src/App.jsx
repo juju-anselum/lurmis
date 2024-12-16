@@ -15,6 +15,7 @@ function App() {
   const pathName = location.pathname.slice(1);
 
   useEffect(() => setIsEnglish((pathName != 'es')), [location, setIsEnglish]);
+  console.log('pathName', pathName);
 
   const [currentPage, setCurrentPage] = useState('home');
 
